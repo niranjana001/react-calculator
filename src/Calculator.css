@@ -1,0 +1,78 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid  grey;
+    border-radius: 5px;
+    width: fit-content;
+    padding: .5rem;
+    background-color: rgb(240, 238, 238);
+    gap: 10px;
+  }
+
+  
+  .input-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .input-row {
+    height: 3rem;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    margin: auto;
+    background-color: #161515;
+   border: 1px solid #161515;;
+    border-radius: 5px;
+
+  }
+  
+
+  .top-row{
+    font-size: 12px;
+    height: 1rem;
+    display: inline-block;
+  }
+  .input-row input {
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #161515;;
+    border-radius: 5px;
+  }
+
+  input{
+    background-color: #161515;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .button-panel {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 5px;
+  }
+  
+  .button-panel button {
+    font-size: 24px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .button-panel button:hover {
+    background-color: #161515;
+    color: white;
+  }
+  
+  .button-panel .wide-button {
+  grid-column: span 2;
+}
